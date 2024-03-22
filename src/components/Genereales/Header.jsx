@@ -1,4 +1,4 @@
-import Logo from "../../assets/icons/logo_chico.svg";
+import Logo from "../../assets/images/logo-sin-fondo.png";
 
 import { Link } from "react-router-dom";
 
@@ -21,11 +21,12 @@ export default function Header() {
 
 				<div className="header_carrito">
 					<Link to="/carrito">
-						<span class="material-icons header_icon"> shopping_cart </span>
-						<span class="header_carrito_count">1</span>
+						<span className="material-icons header_icon"> shopping_cart </span>
+						<span className="header_carrito_count">1</span>
 					</Link>
 				</div>
 			</div>
+			<hr />
 		</header>
 	);
 }
