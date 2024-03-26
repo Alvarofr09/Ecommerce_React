@@ -1,5 +1,7 @@
 import Logo from "../../assets/images/logo-sin-fondo.png";
 
+import "../../styles/components/header.css";
+
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -7,12 +9,7 @@ export default function Header() {
 		<header>
 			<div className="header">
 				<div className="header_logo">
-					<img
-						src={Logo}
-						alt="logo"
-						className="header_logo_img"
-						style={{ width: "20%" }}
-					/>
+					<img src={Logo} alt="logo" className="header_logo_img" />
 				</div>
 
 				<div className="search_wrap">
@@ -26,7 +23,6 @@ export default function Header() {
 					</Link>
 				</div>
 			</div>
-			<hr />
 		</header>
 	);
 }

@@ -1,3 +1,5 @@
+import "../../styles/components/adjetivos.css";
+
 export default function Adjetivos() {
 	return (
 		<section className="adjetivos">
