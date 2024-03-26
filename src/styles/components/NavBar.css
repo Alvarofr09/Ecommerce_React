@@ -1,0 +1,23 @@
+nav.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+ul.nav_list {
+	display: flex;
+	justify-content: space-around;
+}
+
+ul li {
+	margin: 0 10px;
+}
+
+.nav_list_item {
+	display: inline-block;
+	list-style: none;
+}
+
+.nav_list_item_link {
+	text-decoration: none;
+	color: #000000;
+}

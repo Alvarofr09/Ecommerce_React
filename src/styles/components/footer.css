@@ -1,0 +1,259 @@
+/*
+	* Darle el formato basico del footer.
+*/
+footer > * {
+	margin: 0;
+}
+
+footer {
+	background-color: #575f5f;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	color: #fff;
+}
+
+/*
+	* Separar los 2 divs del footer y que cada uno ocupe la mitad de el.
+*/
+footer > div {
+	margin: 50px 20px;
+	width: 50%;
+}
+
+/*
+	* Formato de los links del footer
+*/
+footer a {
+	color: #00adb5;
+	text-decoration: none;
+}
+
+footer h5 {
+	margin-bottom: 25px;
+}
+
+footer hr {
+	margin: 25px 0;
+}
+
+/*
+	* Formato de la lista de paginas del footer
+*/
+.footer-izq ul {
+	list-style: none;
+}
+
+.footer-izq ul a {
+	color: #fff;
+	text-decoration: none;
+	line-height: 25px;
+}
+
+.lista {
+	display: flex;
+	justify-content: center;
+	gap: 75px;
+}
+
+/*
+	* Separar el logo
+*/
+.logo {
+	margin-left: 10%;
+}
+
+/*
+	* Formato del formulario de NewsLetter
+*/
+/* #email {
+	height: 50px;
+	width: 60%;
+}
+
+#suscribir {
+	border: none;
+	background-color: #00adb5;
+	color: #fff;
+	padding: 17px 30px;
+	width: 39%;
+	margin-left: 0;
+}
+
+#email,
+#suscribir {
+	margin-bottom: 15px;
+} */
+
+.input-group {
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.footer_input {
+	margin: 0;
+	min-height: 50px;
+	width: 60%;
+	padding: 0 1rem;
+	color: #fff;
+	font-size: 15px;
+	border: 1px solid #30cfd0;
+	border-radius: 6px 0 0 6px;
+	background-color: transparent;
+}
+
+.button--submit {
+	width: 40%;
+	margin: 0;
+	min-height: 50px;
+	padding: 0.5em 1em;
+	border: none;
+	border-radius: 0 6px 6px 0;
+	background-color: #30cfd0;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.button--submit:hover {
+	background-color: #00adb5;
+}
+
+.input:focus,
+.input:focus-visible {
+	border-color: #00adb5;
+	outline: none;
+}
+
+/*
+	* Formato bonito del checkbox.
+*/
+.cyberpunk-checkbox {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #30cfd0;
+	border-radius: 5px;
+	background-color: transparent;
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.cyberpunk-checkbox:before {
+	content: "";
+	background-color: #30cfd0;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	width: 10px;
+	height: 10px;
+	border-radius: 3px;
+	transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox:checked:before {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.cyberpunk-checkbox-label {
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	align-items: center;
+	margin-left: 0;
+}
+
+/*
+	* Formato de las redes sociales del footer.
+*/
+.footer_social-icons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_social-icons h3 {
+	margin: 0;
+}
+
+.footer_iconos {
+	display: flex;
+	gap: 15px;
+}
+
+.footer_icons {
+	border: 1px solid #f0f0f0;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.footer_icons img {
+	max-width: 100%;
+	height: 30px;
+	width: 30px;
+}
+
+/*
+	* Media query de menos de 930px
+*/
+@media screen and (max-width: 930px) {
+	/*
+		* Poner el footer en columna en vez de en linea
+	*/
+	footer {
+		flex-direction: column;
+	}
+
+	footer > div {
+		width: 100%;
+		margin: 20px 0;
+		padding: 10px 20px;
+	}
+
+	.logo {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	.lista {
+		align-items: center;
+		justify-content: space-evenly;
+		gap: 20px;
+	}
+
+	/*
+		* Poner los iconos de las redes debajo del texto.
+	*/
+	.footer_social-icons {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/*
+		* Poner un border top enblaco como si fuera un hr
+	*/
+	.footer-der {
+		border-top: 1px solid #fff;
+	}
+}
+
+/*
+	* Media query de maximo de 475px
+	? Mirar las medias de pantallas, (tablets, movil, etc). 
+*/
+@media screen and (max-width: 475px) {
+	#email,
+	#suscribir {
+		margin-top: 0;
+		width: 100%;
+	}
+}
