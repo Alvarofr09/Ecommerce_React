@@ -12,8 +12,15 @@ export default function Header() {
 					<img src={Logo} alt="logo" className="header_logo_img" />
 				</div>
 
-				<div className="search_wrap">
-					<h2>Aqui va el buscar</h2>
+				<div className="search">
+					<input
+						type="text"
+						className="search__input"
+						placeholder="Escribe tu búsqueda"
+					/>
+					<button className="search__button">
+						<span class="material-icons search__icon">search</span>
+					</button>
 				</div>
 
 				<div className="header_carrito">
