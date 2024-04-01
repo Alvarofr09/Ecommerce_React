@@ -1,6 +1,6 @@
 import Logo from "../../assets/images/logo-sin-fondo.png";
 
-import "../../styles/components/header.css";
+import "./Header.css";
 
 import { Link } from "react-router-dom";
 

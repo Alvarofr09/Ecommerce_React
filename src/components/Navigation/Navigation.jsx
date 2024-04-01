@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-import "../../styles/components/NavBar.css";
+import "./Navigation.css";
 
 export default function Navigation() {
 	return (
 		<nav className="nav">
 			<ul className="nav__list --left">
 				<li className="nav_list_item">
-					<Link className="nav_list_item_link" to="/">
+					<Link className="nav_list_item_link" to="/productos">
 						Todos los productos
 					</Link>
 				</li>

@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
 
-import Header from "./components/Generales/Header";
-import Navigation from "./components/Generales/Navigation";
-import Adjetivos from "./components/Generales/Adjetivos";
-import Footer from "./components/Generales/Footer";
+import Header from "./components/Header/Header";
+import Navigation from "./components/Navigation/Navigation";
+import Adjetivos from "./components/Adjetivos/Adjetivos";
+import Footer from "./components/Footer/Footer";
 
 import "./App.css";
 
