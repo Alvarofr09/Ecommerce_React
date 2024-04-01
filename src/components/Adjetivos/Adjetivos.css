@@ -3,10 +3,11 @@
 */
 .adjetivos {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	gap: 15px;
 	place-items: center;
 	margin: 20px 0;
+	justify-content: center;
 }
 
 .adjetivos-objetos {
@@ -25,13 +26,4 @@
 
 .adjetivos-objetos_title {
 	margin-bottom: 5px;
-}
-
-/*
-	* Media query de 750px, que hace que el grid sea de 2 colunmas y filas.
-*/
-@media screen and (max-width: 750px) {
-	.adjetivos {
-		grid-template-columns: repeat(2, 1fr);
-	}
 }
