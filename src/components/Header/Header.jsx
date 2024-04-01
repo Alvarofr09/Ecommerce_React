@@ -24,7 +24,7 @@ export default function Header() {
 				</div>
 
 				<div className="header_carrito">
-					<Link to="/carrito">
+					<Link to="/compra/carrito">
 						<span className="material-icons header_icon"> shopping_cart </span>
 						<span className="header_carrito_count">1</span>
 					</Link>
