@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from "./App.jsx";
-import Index from "./views/Generales/Index.jsx";
+import Login from "./views/Generales/Login.jsx";
 import Productos from "./views/Productos/Productos.jsx";
 import DetallesProducto from "./views/Productos/DetallesProducto.jsx";
 import Carrito from "./views/Pago/Carrito.jsx";
@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<App />}>
-					<Route index element={<Index />} />
+					<Route index element={<Login />} />
 					<Route path="productos" element={<Productos />}>
 						<Route path=":id" element={<DetallesProducto />} />
 					</Route>
