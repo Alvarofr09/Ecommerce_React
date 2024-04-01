@@ -21,7 +21,7 @@ export default function Header() {
 						placeholder="Escribe tu búsqueda"
 					/>
 					<button className="search__button">
-						<span class="material-icons search__icon">search</span>
+						<span className="material-icons search__icon">search</span>
 					</button>
 				</div>
 
