@@ -1,0 +1,10 @@
+/* Css del Login y Registro */
+
+main {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.index_container {
+	margin-top: 100px;
+}
