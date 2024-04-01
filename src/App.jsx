@@ -25,7 +25,6 @@ function App() {
 						<Route path="productos" element={<Productos />}>
 							<Route path=":id" element={<DetallesProducto />} />
 						</Route>
-
 						<Route path="about" element={<Nosotros />} />
 						<Route path="contact" element={<Contacto />} />
 						<Route path="privacidad" element={<Privacidad />} />
