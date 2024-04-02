@@ -9,6 +9,7 @@ export default function Layout() {
 		<>
 			<Header />
 			<Navigation />
+			{/* <PrimarySearchAppBar /> */}
 			<Outlet />
 			<Adjetivos />
 			<Footer />
