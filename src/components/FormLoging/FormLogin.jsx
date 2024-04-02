@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import FormPropsTextFields from "../Form/Form";
+
 import "./FormLogin.css";
 
 export default function Form({ title, sub_title, children }) {
@@ -7,9 +9,7 @@ export default function Form({ title, sub_title, children }) {
 		<section className="container">
 			<div className="heading">{title}</div>
 			<h3 className="sub-heading">{sub_title}</h3>
-			<form action="" className="form">
-				{children}
-			</form>
+			<FormPropsTextFields />
 			<span className="agreement">
 				<Link to="/privacidad">Politicas de privacidad</Link>
 			</span>

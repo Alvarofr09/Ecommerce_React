@@ -1,67 +1,96 @@
 import FormLogin from "../../components/FormLoging/FormLogin";
+
+import FormPropsTextFields from "../../components/Form/Form";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+
 import Input from "../../components/Input/Input";
 
 export default function Login() {
 	return (
 		<main className="index_container">
-			<FormLogin title={"Iniciar sesión"} sub_title={"Accede con tus datos"}>
-				<Input
-					placeholder="E-mail"
-					id="correoInicio"
-					name="correoInicio"
+			<FormPropsTextFields
+				title={"Iniciar sesión"}
+				sub_title={"Accede con tus datos"}
+			>
+				<TextField
+					margin="normal"
+					className="input"
+					fullWidth
+					required
+					color="primary"
+					id="login-email"
+					label="Correo electronico"
 					type="email"
-					className="input"
-					required=""
+					helperText="Texto que se puede poner"
 				/>
-				<Input
-					placeholder="Password"
-					id="contrasenaInicio"
-					name="contrasenaInicio"
+				<TextField
+					margin="normal"
+					fullWidth
+					required
+					color="primary"
+					id="login-password"
+					label="Password"
 					type="password"
+					autoComplete="current-password"
+				/>
+				<Button fullWidth variant="contained" color="primary" margin="normal">
+					Iniciar Sesion
+				</Button>
+			</FormPropsTextFields>
+			<FormPropsTextFields
+				title={"Registrate"}
+				sub_title={"Crea una nueva cuenta"}
+			>
+				<TextField
+					xs={{ width: "50%" }}
+					margin="normal"
 					className="input"
-					required=""
-				/>
-				<Input value="Iniciar sesión" type="submit" className="login-button" />
-			</FormLogin>
-			<FormLogin title={"Registrate"} sub_title={"Crea una cuenta"}>
-				<Input
-					placeholder="Nombre"
+					fullWidth
+					required
+					color="primary"
+					id="register-name"
+					label="Nombre"
 					type="text"
-					name="nombreRegistro"
-					id="nombreRegistro"
-					className="input nombreRegistro"
-					required=""
+					helperText="Texto que se puede poner"
 				/>
-				<Input
-					placeholder="Apellidos"
+				<TextField
+					xs={{ m: 1, width: "25ch" }}
+					margin="normal"
+					className="input"
+					fullWidth
+					required
+					color="primary"
+					id="register-surname"
+					label="Apellidos"
 					type="text"
-					name="apellidoRegistro"
-					id="apellidoRegistro"
-					className="input apellidoRegistro"
-					required=""
+					helperText="Texto que se puede poner"
 				/>
-				<Input
-					placeholder="E-mail"
-					id="correoRegistro"
-					name="correoRegistro"
+				<TextField
+					margin="normal"
+					className="input"
+					fullWidth
+					required
+					color="primary"
+					id="register-email"
+					label="Correo electronico"
 					type="email"
-					className="input"
-					required=""
+					helperText="Texto que se puede poner"
 				/>
-				<Input
-					placeholder="Password"
-					id="contrasenaRegistro"
-					name="contrasenaRegistro"
+				<TextField
+					margin="normal"
+					fullWidth
+					required
+					color="primary"
+					id="register-input"
+					label="Password"
 					type="password"
-					className="input"
-					required=""
+					autoComplete="current-password"
 				/>
-				<Input
-					value="Crear tu cuenta ahora"
-					type="submit"
-					className="signin-button"
-				/>
-			</FormLogin>
+				<Button fullWidth variant="contained" color="primary" margin="normal">
+					Crear cuenta
+				</Button>
+			</FormPropsTextFields>
 		</main>
 	);
 }
